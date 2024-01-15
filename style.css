@@ -1,0 +1,435 @@
+@font-face {
+    font-family: Inter;
+    src: url(./assets/font/Inter-VariableFont.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Inter;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #2b2c2e;
+    line-height: 1.1875rem;
+    font-size: 0.8125rem;
+}
+
+h1 {
+    font-size: 2.4375rem;
+    font-weight: 300;
+    line-height: 2.9375rem;
+    color: #2b2c2e;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.375rem;
+    color: #2b2c2e;
+}
+
+h3 {
+    font-size: 3.4375rem;
+    font-weight: 700;
+    line-height: 4.625rem;
+    color: #27282a;
+}
+
+h4 {
+    font-size: 1.4375rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: #2b2c2e;
+}
+
+h5 {
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #27282a;
+}
+
+p {
+    font-size: 1.3125rem;
+    line-height: 1.625rem;
+    color: #848689;
+}
+.pSmallFont {
+    font-size: 1.0625rem;
+    color: #848689;
+}
+
+.pCritiqueA {
+    font-size: 1rem;
+    color: #9fa2a7;
+    text-align: center;
+}
+
+.pCritiqueB {
+    font-size: 0.9375rem;
+    color: #9fa2a7;
+    text-align: center;
+}
+
+.conversionP {
+    font-size: 1.25rem;
+    color: #9fa2a7;
+    line-height: 1.375rem;
+}
+
+.startedBtn {
+    margin-top: 1vw;
+    margin-right: 4vw;
+    font-size: 1.0625rem;
+    line-height: 1.375rem;
+    border: 1px solid black;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.startedBtn:hover {
+    transition: 0.5s;
+    background-color: #27282a;
+    color: white;
+}
+
+/* Header */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vw;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vw;
+}
+
+.links {
+    display: flex;
+    gap: 0.75vw;
+    padding-top: 1vw;
+    padding-left: 4vw;
+}
+
+.links img {
+    display: none;
+}
+
+nav h2 {
+    padding-top: 1vw;
+}
+
+nav a {
+    padding-right: 2vw;
+    padding-top: 1vw;
+}
+
+/* Section Flatrate */
+
+.flatRate {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3vw;
+    margin-bottom: 5vw;
+    padding-left: 4vw;
+}
+
+.dollar {
+    font-size: 3.8125rem;
+    font-weight: 700;
+    line-height: 1.5625rem;
+    color: #2b2c2e;
+    margin-bottom: 1vw;
+}
+
+.flat {
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+    color: #9fa2a7;
+}
+
+.break::after {
+    content: "\A";
+    white-space: pre;
+}
+
+/* Section Deliver */
+
+.deliver {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    padding: 2vw 4vw;
+    margin-bottom: 5vw;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background-image: url(./assets/img/home_deliverables.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.container div {
+    margin-left: 50%;
+}
+
+.container h3,
+.container p,
+.container h4 {
+    margin-bottom: 2vw;
+}
+
+/* How It Works */
+
+.worksContainer {
+    max-width: 80%;
+    background-color: rgba(0, 0, 0, 0.041);
+}
+.worksContainer {
+    display: flex;
+    margin: auto;
+}
+.worksLeft {
+    padding: 4vw;
+    padding-right: 0;
+}
+
+.worksLeft h5 {
+    margin-bottom: 2vw;
+}
+
+.pSmallFont {
+    padding-left: 2vw;
+    margin-bottom: 2vw;
+}
+
+.howItWorks {
+    margin-bottom: 5vw;
+}
+
+/* Section Critique */
+
+.critiqueContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5vw;
+}
+
+.critiqueContainer h5 {
+    margin-bottom: 2vw;
+}
+
+/* Section Conversion */
+
+.conversion {
+    background-image: url(./assets/img/28.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+
+    margin-bottom: 5vw;
+}
+
+.convArticle {
+    display: flex;
+    max-width: 75%;
+    margin-left: 25%;
+    padding-top: 20%;
+}
+
+.convArticle img {
+    width: 50%;
+    margin-top: -5vw;
+    margin-left: -5vw;
+}
+
+.conversionP {
+    line-height: 200%;
+}
+
+/* Footer */
+
+footer {
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h6 {
+    margin-bottom: 3vw;
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5vw;
+}
+
+.div p,
+.div a {
+    font-size: 1rem;
+}
+
+.div img {
+    width: 25%;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    .container {
+        background-image: none;
+    }
+
+    .container div {
+        max-width: 90%;
+        margin: auto;
+        text-align: center;
+        opacity: 1 !important;
+    }
+    .worksContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .worksLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .convArticle {
+        flex-direction: column-reverse;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .critiqueContainer {
+    }
+    .convArticle img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .links a {
+        display: none;
+    }
+
+    .links img {
+        display: block;
+        width: 30px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        opacity: 0.5;
+    }
+
+    .links img:hover {
+        opacity: 1;
+    }
+
+    nav a {
+        display: none;
+    }
+    header h1 {
+        font-weight: 500;
+    }
+
+    header h2 {
+        margin-right: 5vw;
+    }
+
+    .mobile::after {
+        content: "\A";
+        white-space: pre;
+    }
+
+    .hero {
+        margin-bottom: 5vw;
+    }
+
+    .flatRate {
+        grid-template-columns: 1fr;
+        gap: 10vw;
+        text-align: center;
+    }
+
+    .dollar {
+        margin-bottom: 8vw;
+    }
+
+    .container h3,
+    .container h4,
+    .container p {
+        margin-bottom: 8vw;
+    }
+    .worksLeft {
+        text-align: center;
+    }
+
+    .worksLeft h5,
+    .worksLeft p {
+        margin-bottom: 8vw;
+    }
+
+    .convArticle {
+        margin: auto;
+        margin-bottom: 5vw;
+    }
+
+    .critiqueContainer {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .left {
+        text-align: center;
+        max-width: 80%;
+        margin: auto;
+    }
+    footer h6 {
+        font-size: 1.5rem;
+        margin-bottom: 5vw;
+    }
+
+    .footer img {
+        margin-bottom: 5vw;
+    }
+
+    .div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4vw;
+    }
+}
